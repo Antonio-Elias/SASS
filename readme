@@ -19,7 +19,7 @@ Para mais detalhes podem acessar o site: https://sass-lang.com/
 Nele contem as informações detalhadas de como usar o sass.
 
 Partes interessantes que achei deste estudo:
-O fato de poder agrupar o css ex posso agrupar todos os elemento de um nav dentro dela.
+O fato de poder agrupar o css ex: posso agrupar todos os elemento de um nav dentro dela.
 
 nav{
   css..
