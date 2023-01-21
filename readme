@@ -1,1 +1,35 @@
 Estudo realizado com a ferramenta SASS
+
+Estou usando o nodeJs com o pacote global do SASS.
+Estou usando a linha de comando para gerar o css compilado:
+
+Este comando esta monitorando apenas um arquivo, porem é possivel monitorar uma pasta especifica.
+Um arquivo:
+sass assets/sass/base.scss assets/css/style.css --no-source-map --style compressed -w 
+O -w faz com que o SASS compile o arquivo quando o mesmo e salvo e gere o css.
+
+Uma pasta:
+sass --watch assets/sass:assets/css --no-source-map --style compressed
+Neste caso para cada arquivo .scss será gerado um .css
+
+
+Para conhecimento tambem usei o Scout-App uma ferramenta visual para o SASS
+
+Para mais detalhes podem acessar o site: https://sass-lang.com/
+Nele contem as informações detalhadas de como usar o sass.
+
+Partes interessantes que achei deste estudo:
+O fato de poder agrupar o css ex posso agrupar todos os elemento de um nav dentro dela.
+
+nav{
+  css..
+  ul{
+    css
+    li{
+      css
+      a{
+        css
+      }
+    }
+  } 
+}

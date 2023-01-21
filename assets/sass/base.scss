@@ -1,3 +1,35 @@
+// variaveis 
+$color-bg-nav: #eee;
+$color-link-nav: #ccc;
+$color-nav: #000;
+
+
 body{
-    background-color: #ccc;
+    margin: 0;
+    padding: 0;
+}
+// agrupamento com o sass
+nav{
+    background-color: $color-bg-nav;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+
+        li{
+            margin: 2px;
+            
+            a{
+                background-color: $color-link-nav;
+                padding: 10px;
+                text-decoration: none;
+                color: $color-nav;
+            }
+        }
+    }
 }
