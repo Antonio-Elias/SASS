@@ -1,4 +1,4 @@
-# Estudo realizado com a ferramenta SASS
+#Estudo realizado com a ferramenta SASS
 
 Estou usando o nodeJs com o pacote global do SASS.
 Estou usando a linha de comando para gerar o css compilado:
@@ -20,7 +20,7 @@ Nele contem as informações detalhadas de como usar o sass.
 
 Esta pagina é para fins didaticos.
 
-## Partes interessantes que achei deste estudo:
+##Partes interessantes que achei deste estudo:
 O fato de poder agrupar o css ex: posso agrupar todos os elemento de um nav dentro dela.
 
 nav{
@@ -36,14 +36,14 @@ nav{
   } 
 }
 
-## Pré processar em um unico arquivo o nosso css final
+##Pré processar em um unico arquivo o nosso css final
 
 Pré processar em um unico arquivo o nosso css final, usando varias folhas de stylo.
 Para isso basta apenas usar o _ antes da nossa folha de stylo e usar o @import 'nomeDaFolha' sem u prefixo _;
 Neste exemplo usamos o _reset.scss . 
 
 
-## Usar Mixin seria como funções que podem ser reaproveitadas no css.
+##Usar Mixin seria como funções que podem ser reaproveitadas no css.
 
 @mixin nomeDoMixin($propriedada){
   todo codigo desejado, pode
@@ -67,7 +67,7 @@ Para reaprovitar:
   demais propriedades
 }
 
-## Operações matematicas podem ser efetuadas tambem.
+##Operações matematicas podem ser efetuadas tambem.
 
 Para ex: foi criado 2 div um tem o tamanho fixo e a outra sempre o dobro.
  $item-width: 100px;
@@ -78,7 +78,7 @@ Para ex: foi criado 2 div um tem o tamanho fixo e a outra sempre o dobro.
   width: $item-width * 2;
  }
 
- ## Condicionais e loops.
+ ##Condicionais e loops.
 
  Esta opção e um facilitador um exemplo simples se em 10 itens e todos eles tem as classe numerada item-1, item-2,....
  e ainda usar condicionais como @if{} ou @else.
@@ -102,7 +102,7 @@ Para ex: foi criado 2 div um tem o tamanho fixo e a outra sempre o dobro.
    }
 
 
-   ## Usando o hover 
+   ##Usando o hover 
    Vamos usar no nav.
    usaremos o atributo a da nav.
 
