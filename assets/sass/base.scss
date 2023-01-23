@@ -26,7 +26,6 @@ nav{
 
         li{
             margin: 2px;
-            @include border(1em, #000);
             
             a{
                 background-color: $color-link-nav;
@@ -36,6 +35,7 @@ nav{
                 // aplicando o hover
                 &:hover{ // o & se refere ao item que o mesmo esta inserido 
                     background-color:#999;
+                    @include border(1px, #000);
                    }
                 
             }
