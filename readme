@@ -33,3 +33,8 @@ nav{
     }
   } 
 }
+
+
+Poder pré processar em um unico arquivo o nosso css final, mas poder serparar em varias folhas de stylo.
+Para isso basta apenas usar o _ antes da nossa folha de stylo e usar o @import 'nomeDaFolha' sem u prefixo _;
+Neste exemplo usamos o _reset.scss . 

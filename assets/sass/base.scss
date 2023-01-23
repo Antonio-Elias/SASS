@@ -1,13 +1,10 @@
+@import 'reset';
+
 // variaveis 
 $color-bg-nav: #eee;
 $color-link-nav: #ccc;
 $color-nav: #000;
 
-
-body{
-    margin: 0;
-    padding: 0;
-}
 // agrupamento com o sass
 nav{
     background-color: $color-bg-nav;
