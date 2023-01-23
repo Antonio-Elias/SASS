@@ -50,3 +50,17 @@ Neste exemplo usamos o _reset.scss .
 }
 
 Para usar o mesmo seria @include nomeDoMinxin(propriedade).
+
+## Expandindo propriedades:
+
+Pode ser aproveitao codigo e evitar duplicidade:
+
+%Aprovitando-codigo{
+  todas as propriedades desejadas
+}
+
+Para reaprovitar:
+.onde-desejar{
+  @extend %Aproveitando-codigo;
+  demais propriedades
+}
