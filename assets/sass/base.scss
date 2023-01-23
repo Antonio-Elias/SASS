@@ -90,3 +90,24 @@ $item-width: 100px;
     background-color: rgb(83, 74, 74);
     width: $item-width * 2;
 }
+
+// loop e condicionais
+%item-padrao{
+    font-size: 14px;
+    border: 1px solid #333;
+    padding:5px;
+    margin: 2px;
+    
+   }
+%item-negrito{
+    font-weight: bold;
+   }
+  
+ @for $i from 1 through 10{
+    .item-#{$i}{// desta forma se cria variaveis 
+      @extend %item-padrao;
+      @if $i <= 3 { // o que atende a condicional vai fivar negrito
+          @extend %item-negrito;
+        }
+    }
+   }

@@ -18,6 +18,8 @@ Para conhecimento tambem usei o Scout-App uma ferramenta visual para o SASS
 Para mais detalhes podem acessar o site: https://sass-lang.com/
 Nele contem as informações detalhadas de como usar o sass.
 
+Esta pagina é para fins didaticos.
+
 ## Partes interessantes que achei deste estudo:
 O fato de poder agrupar o css ex: posso agrupar todos os elemento de um nav dentro dela.
 
@@ -75,3 +77,26 @@ Para ex: foi criado 2 div um tem o tamanho fixo e a outra sempre o dobro.
  .item-duplo{
   width: $item-width * 2;
  }
+
+ ## Condicionais e loops.
+
+ Esta opção e um facilitador um exemplo simples se em 10 itens e todos eles tem as classe numerada item-1, item-2,....
+ e ainda usar condicionais como @if{} ou @else.
+
+%item-padrao{
+    font-size: 14px;
+    border: 1px solid #333;
+    padding:5px;
+   }
+%item-negrito{
+    font-weight: bold;
+   }
+  
+ @for $i from 1 through 10{
+    .item-#{$i}{// desta forma se cria variaveis a cada interação vai ser criado o css para cada item
+      @extend %item-padrao;
+      @if $i <= 3 {  // o que atende a condicional vai fivar negrito
+          @extend %item-negrito;
+        }
+    }
+   }
