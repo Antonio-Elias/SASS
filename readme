@@ -100,3 +100,13 @@ Para ex: foi criado 2 div um tem o tamanho fixo e a outra sempre o dobro.
         }
     }
    }
+
+
+   ## Usando o hover 
+   Vamos usar no nav.
+   usaremos o atributo a da nav.
+
+   E aplicado usando o nav > ul > li > 
+   &:hover{ // o & se refere ao item que o mesmo esta inserido
+    background-color:#999;
+   }

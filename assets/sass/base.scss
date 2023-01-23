@@ -33,6 +33,11 @@ nav{
                 padding: 10px;
                 text-decoration: none;
                 color: $color-nav;
+                // aplicando o hover
+                &:hover{ // o & se refere ao item que o mesmo esta inserido 
+                    background-color:#999;
+                   }
+                
             }
         }
     }
