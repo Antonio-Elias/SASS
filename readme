@@ -64,3 +64,14 @@ Para reaprovitar:
   @extend %Aproveitando-codigo;
   demais propriedades
 }
+
+## Operações matematicas podem ser efetuadas tambem.
+
+Para ex: foi criado 2 div um tem o tamanho fixo e a outra sempre o dobro.
+ $item-width: 100px;
+ .item{
+  width: $item-width;
+ }
+ .item-duplo{
+  width: $item-width * 2;
+ }
